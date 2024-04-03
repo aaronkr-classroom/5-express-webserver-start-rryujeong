@@ -46,6 +46,10 @@ app.get("/contact", (req, res) => {
   res.send("This is the CONTACT page.");
 });
 
+app.get("/about", (req, res) => {
+  res.send("This is the About page.");
+
+});
 /**
  * Listing 9.2 (p. 145)
  * 경로 매개변수로 응답하기
