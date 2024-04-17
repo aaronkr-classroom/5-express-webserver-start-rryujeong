@@ -11,7 +11,25 @@ exports.respondWithName1 = (req, res) => {
 /**
  * Listing 10.3
  */
-exports.getHome = (req,res) => {res.render('index');} // "/" index
+exports.getHome = (req,res) => {
+    res.render('index',{
+        name: "Sarah",
+        people: {
+            usa:{
+                einstein: "Albert Einstein", 
+                musk: "Elon Musk",
+                jobs: "Steve jobs"
+            },
+            korea: {
+                psy: "싸이다!",
+                kim: "김예수",
+            },
+            mexico: {
+                jesus: "Jesus Alvarez"
+        }
+    }
+});} // "/" index
+
 // exports.getContact = (req,res) =>{} // "/contact" GET methhod 
 // exports.postContact = (req,res) => {} // "/contact" POST method
 
